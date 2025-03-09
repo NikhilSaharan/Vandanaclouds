@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 20px;
+            width: 350px;
+            min-height: 600px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #007bff;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #007bff;
+            font-weight: bold;
+            background: rgba(0, 123, 255, 0.1);
+            padding: 4px 8px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .contact {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #444;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-block;
+            color: #555;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        a.resume-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        a.resume-link:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile-img" src="photo.png" alt="Profile Picture">
+        <p class="title">Software Developer (ReactJS Developer)</p>
+        <h2>Nikhil Kumar</h2>
+        <a class="resume-link" href="https://drive.google.com/file/d/1rFAYmZoMOFEx-tv3QtUnU_FR_VWUWgQI/view?usp=drive_link" target="_blank">View Resume</a>
+        <hr>
+        <p class="subtitle">Software Developer</p>
+        <p class="contact">Detail-oriented Frontend Developer skilled in <b>React.js</b>, <b>Redux</b>, <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, with experience in building responsive, high-performance applications.</p>
+        <p class="contact"><i class="fas fa-phone"></i> <b>9810879698</b></p>
+        <p class="contact"><i class="fas fa-envelope"></i> <b>nikhilkumarsaharan1212@gmail.com</b></p>
+        <p class="contact"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nikhil-kumar-901bb8285" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">LinkedIn</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/NikhilSaharan"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
